@@ -33,13 +33,13 @@ namespace dictionary
 
                 if (grades.ContainsKey(num))
                 {
-                    Console.WriteLine($"{num} -> {grades[num]}");
+                    Console.WriteLine($"{num} {grades[num]}");
                     sum += num;
                     count++;
                 }
                 else
                 {
-                    Console.WriteLine($"{num} -> нет такой оценки");
+                    Console.WriteLine($"{num} нет такой оценки");
                 }
             }
 
