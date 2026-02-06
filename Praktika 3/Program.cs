@@ -29,7 +29,7 @@ namespace dictionary
 
             for (int i = 0; i < parts.Length; i++)
             {
-                int num = int.Parse(parts[i]);
+                int num = Convert.ToInt32(parts[i]);
 
                 if (grades.ContainsKey(num))
                 {
@@ -43,11 +43,11 @@ namespace dictionary
                 }
             }
 
-            // Статистика
+            // Средняя
             if (count > 0)
             {
                 double average = (double)sum / count;
-                Console.WriteLine($"Средний балл: {average:F1}");
+                Console.WriteLine($"Средний балл: {average}");
             }
         }
     }
